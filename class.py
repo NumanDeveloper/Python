@@ -9,7 +9,7 @@ class Dog:
         print('woof woof')
 
     def eat(self):
-        print("Meat is my fav ❤  food")
+        print("Meat is my fav ❤ food")
 
 
 fido = Dog("Fido", "black")

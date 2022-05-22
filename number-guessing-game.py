@@ -1,6 +1,5 @@
-'''
-This is a number guessing game
-'''
+# ---This is a number guessing game---
+
 '''
 Logic:
 1. Generate a random number between 1 and 50 using random module
@@ -15,6 +14,8 @@ Logic:
 # generating a random number
 from os import read
 import random
+
+print("*** Welcome to the Number Guessing Game ***")
 randomNumber = random.randint(1, 50)
 # print(randomNumber)
 
@@ -36,7 +37,7 @@ while(userGuess != randomNumber):
             print("Wrong! Guess a smaller number")
     guesses += 1
 
-print(f"You guessed right in {guesses} guesses")
+print(f"You hit right in {guesses} guesses")
 print("************************************")
 # open the file in read mode
 with open("high-score.txt", "r") as f:
